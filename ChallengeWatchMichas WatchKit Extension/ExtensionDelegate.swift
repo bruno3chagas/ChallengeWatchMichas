@@ -33,17 +33,22 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
                 backgroundTask.setTaskCompletedWithSnapshot(false)
             case let snapshotTask as WKSnapshotRefreshBackgroundTask:
                 // Snapshot tasks have a unique completion call, make sure to set your expiration date
-                snapshotTask.setTaskCompleted(restoredDefaultState: true, estimatedSnapshotExpiration: Date.distantFuture, userInfo: nil)
+                WKInterfaceDevice.current().play(.notification)
+                WKInterfaceController.reloadRootPageControllers(withNames: ["responseStoryboard"], contexts: nil, orientation: .horizontal, pageIndex: 0)
+                 print("benga 4")
+                snapshotTask.setTaskCompleted(restoredDefaultState: true, estimatedSnapshotExpiration: Date(), userInfo: nil)
             case let connectivityTask as WKWatchConnectivityRefreshBackgroundTask:
                 // Be sure to complete the connectivity task once you’re done.
-                connectivityTask.setTaskCompletedWithSnapshot(false)
+                print("benga 1")
+                connectivityTask.setTaskCompletedWithSnapshot(true)
             case let urlSessionTask as WKURLSessionRefreshBackgroundTask:
                 // Be sure to complete the URL session task once you’re done.
-                WKInterfaceController.reloadRootPageControllers(withNames: ["responseStoryboard"], contexts: nil, orientation: .horizontal, pageIndex: 0)
-                urlSessionTask.setTaskCompletedWithSnapshot(false)
+                print("benga 2")
+                urlSessionTask.setTaskCompletedWithSnapshot(true)
             default:
+                print("benga 3")
                 // make sure to complete unhandled task types
-                task.setTaskCompletedWithSnapshot(false)
+                task.setTaskCompletedWithSnapshot(true)
             }
         }
     }

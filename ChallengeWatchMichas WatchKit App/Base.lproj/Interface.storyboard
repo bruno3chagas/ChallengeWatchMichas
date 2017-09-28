@@ -14,7 +14,7 @@
             <objects>
                 <controller identifier="interfaceStoryboard" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="ChallengeWatchMichas_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="9br-pm-d6S">
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" spacing="7" id="9br-pm-d6S">
                             <items>
                                 <imageView width="100" height="100" alignment="center" image="siri" id="53q-19-9Ee"/>
                                 <button width="1" alignment="left" title="Hey Siri!" id="H8T-lV-Ooc">
