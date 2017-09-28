@@ -53,19 +53,19 @@ class InterfaceController: WKInterfaceController {
     
         else {
             asking = false
-            let date = Date(timeIntervalSinceNow: 15)
+            let date = Date(timeIntervalSinceNow: 20)
             WKExtension.shared().scheduleSnapshotRefresh(withPreferredDate: date, userInfo: nil, scheduledCompletion: { (error) in
                 guard error == nil else {
                     print(error!)
                     return
                 }
             })
-            WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: date, userInfo: nil, scheduledCompletion: { (error) in
-                guard error == nil else {
-                    print(error!)
-                    return
-                }
-            })
+//            WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: date, userInfo: nil, scheduledCompletion: { (error) in
+//                guard error == nil else {
+//                    print(error!)
+//                    return
+//                }
+//            })
             
             WKExtension.shared().isFrontmostTimeoutExtended = true
             WKInterfaceController.reloadRootPageControllers(withNames: ["requestStoryboard"], contexts: nil, orientation: .horizontal, pageIndex: 0)
