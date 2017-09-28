@@ -9,21 +9,21 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
     </dependencies>
     <scenes>
-        <!--requestStoryboard-->
-        <scene sceneID="0Ct-kd-Raj">
+        <!--responseStoryboard-->
+        <scene sceneID="EpN-dT-tWf">
             <objects>
-                <controller identifier="requestStoryboard" id="GcR-sw-8IH">
+                <controller identifier="responseStoryboard" id="NS8-Hu-hrf">
                     <items>
-                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="9Mw-cg-0GL">
+                        <group width="1" alignment="center" verticalAlignment="center" layout="vertical" id="qHp-tu-Pse">
                             <items>
-                                <imageView alignment="left" image="siri_line" id="HOa-Vi-it2"/>
-                                <label width="136" alignment="left" text="Te aviso quando encontrar uma resposta :)" textAlignment="center" numberOfLines="0" id="zbR-ec-Lvt"/>
+                                <imageView width="50" height="50" alignment="center" verticalAlignment="center" image="siri" id="ubX-ZM-pM6"/>
+                                <label alignment="center" verticalAlignment="center" text="Desculpe, não consegui encontrar nada." numberOfLines="0" id="CuH-tH-yvG"/>
                             </items>
                         </group>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="92" y="-5"/>
+            <point key="canvasLocation" x="259" y="147"/>
         </scene>
     </scenes>
 </document>

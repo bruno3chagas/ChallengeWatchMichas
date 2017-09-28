@@ -39,6 +39,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
                 connectivityTask.setTaskCompletedWithSnapshot(false)
             case let urlSessionTask as WKURLSessionRefreshBackgroundTask:
                 // Be sure to complete the URL session task once you’re done.
+                WKInterfaceController.reloadRootPageControllers(withNames: ["responseStoryboard"], contexts: nil, orientation: .horizontal, pageIndex: 0)
                 urlSessionTask.setTaskCompletedWithSnapshot(false)
             default:
                 // make sure to complete unhandled task types

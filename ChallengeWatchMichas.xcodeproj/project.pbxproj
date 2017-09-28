@@ -22,6 +22,7 @@
 		9EDB89361F7C35C1006CD0C1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EDB89351F7C35C1006CD0C1 /* ComplicationController.swift */; };
 		9EDB89381F7C35C1006CD0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB89371F7C35C1006CD0C1 /* Assets.xcassets */; };
 		9EDB89491F7D6227006CD0C1 /* Request.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB89481F7D6227006CD0C1 /* Request.storyboard */; };
+		9EDB894D1F7D76D9006CD0C1 /* Response.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EDB894C1F7D76D9006CD0C1 /* Response.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		9EDB89391F7C35C1006CD0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EDB893A1F7C35C1006CD0C1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		9EDB89481F7D6227006CD0C1 /* Request.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Request.storyboard; sourceTree = "<group>"; };
+		9EDB894C1F7D76D9006CD0C1 /* Response.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Response.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +147,7 @@
 			children = (
 				9EDB89201F7C35C1006CD0C1 /* Interface.storyboard */,
 				9EDB89481F7D6227006CD0C1 /* Request.storyboard */,
+				9EDB894C1F7D76D9006CD0C1 /* Response.storyboard */,
 				9EDB89231F7C35C1006CD0C1 /* Assets.xcassets */,
 				9EDB89251F7C35C1006CD0C1 /* Info.plist */,
 			);
@@ -281,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EDB89241F7C35C1006CD0C1 /* Assets.xcassets in Resources */,
+				9EDB894D1F7D76D9006CD0C1 /* Response.storyboard in Resources */,
 				9EDB89221F7C35C1006CD0C1 /* Interface.storyboard in Resources */,
 				9EDB89491F7D6227006CD0C1 /* Request.storyboard in Resources */,
 			);
