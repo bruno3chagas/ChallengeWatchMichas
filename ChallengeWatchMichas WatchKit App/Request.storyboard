@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13196" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13051"/>
+    </dependencies>
+    <scenes>
+        <!--requestStoryboard-->
+        <scene sceneID="0Ct-kd-Raj">
+            <objects>
+                <controller identifier="requestStoryboard" id="GcR-sw-8IH">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="9Mw-cg-0GL">
+                            <items>
+                                <imageView alignment="left" id="HOa-Vi-it2"/>
+                                <label alignment="left" text="Label" id="zbR-ec-Lvt"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="92" y="-5"/>
+        </scene>
+    </scenes>
+</document>
